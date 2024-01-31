@@ -30,47 +30,75 @@ export const HeroData = [
     delay: 0.25,
   },
 ];
-
+export const containerVarients=(delay=0)=>({
+  "offscreen":{
+    opacity:0,
+    y:30,
+  },
+  "onscreen":{
+    opacity:1,
+    y:0,
+    transition:{
+      type:"spring",
+      duration:2,
+      delay
+    }
+  }
+})
+export const tagVarient={
+  "offscreen":{
+    opacity:0,
+    y:30
+  },
+  "onscreen":{
+    opacity:1,
+    y:0,
+    transition:{
+      type:"spring",
+      duration:2,
+    }
+  }
+}
 export const features = [
   {
-    icon: "/features/Frame-0.png",
+    icon: "/Frame-0.png",
     title: "3x monthly revenue",
   },
   {
-    icon: "/features/Frame-1.png",
-    title: "Flat fee of 6-12%",
+    icon: "/Frame-1.png",
+    title: "Flat fee of 6-12% by Echo Net" ,
   },
   {
-    icon: "/features/Frame-2.png",
-    title: "Flexible repayments by revenue share",
+    icon: "/Frame-2.png",
+    title: "Flexible repayments ",
   },
   {
-    icon: "/features/Frame-3.png",
+    icon: "/Frame-3.png",
     title: "3-4 years repayment",
   },
   {
-    icon: "/features/Frame-4.png",
+    icon: "/Frame-4.png",
     title: "$10-100k seed investment",
   },
   {
-    icon: "/features/Frame-5.png",
+    icon: "/Frame-5.png",
     title: "2% of revenue up to 3X cap",
   },
 ];
 
 export const ourDiffFeatures = [
   {
-    icon: "/OurDiff/Frame-0.png",
+    icon: "/Frame-0.png",
     title: "Data Driven",
     des: "Our mission is to level the playing field for early stage growth capital. We provide capital that is unbiased, flexible and non dilutive with the execution support to accelerate value creation",
   },
   {
-    icon: "/OurDiff/Frame-1.png",
+    icon: "/Frame-1.png",
     title: "flexible funding",
     des: "Funding that flexes as revenue grows with transparent costs and does not require dilution, personal guarantees or pitch decks",
   },
   {
-    icon: "/OurDiff/Frame-2.png",
+    icon: "/Frame-2.png",
     title: "value accelerating",
     des: "On demand expertise to supercharge growth in areas that are hard to access for early stage founders",
   },
@@ -78,17 +106,17 @@ export const ourDiffFeatures = [
 
 export const hitFeatures = [
   {
-    icon: "/howItWorks/Frame-0.png",
+    icon: "/Frame-0.png",
     title: "Connect",
     des: "Register and qualify for funding in less than 5 mins. Connect revenue and marketing platforms you already use.",
   },
   {
-    icon: "/howItWorks/Frame-1.png",
+    icon: "/Frame-1.png",
     title: "Get Funded",
     des: "Get a term sheet with upto 3 funding offers. Select option that best suits and complete onboarding to receive funds in days",
   },
   {
-    icon: "/howItWorks/Frame-2.png",
+    icon: "/Frame-2.png",
     title: "Support Growth",
     des: "Access curated feed of actionable insights and on demand execution expertise. Auto qualify for follow on funding as you grow",
   },
