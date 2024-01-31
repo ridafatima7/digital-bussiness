@@ -1,6 +1,7 @@
 import React from 'react'
 import EmailBox from './EmailBox'
 import {HeroData} from './data';
+import {motion} from 'framer-motion'
 const Hero = () => {
   return (
     <div className='h-wrapper'>
